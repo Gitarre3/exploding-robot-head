@@ -9,8 +9,10 @@ html {
 }
 
 body {
-  margin: 0;
+  margin-top: 100px;
   min-width: 320px;
+  position: relative;
+  overflow: hidden;
 }
 
 .banner {
@@ -25,11 +27,31 @@ body {
   width: 320px;
 }
 
-.robot-brain {
-  width: 46px;
-}
-
 .robot-head-right,
 .robot-head-left {
   width: 125px;
+  position: absolute;
 }
+
+.robot-brain {
+  width: 46px;
+  left: 137px;
+  position: absolute;
+}
+
+.robot-head-left {
+  top: -40px;
+  left: 35px;
+}
+
+.robot-head-right {
+  top: -40px;
+  left: 160px;
+}
+
+body:hover {
+  transform: translate(100px);
+}
+
+
+/*transform: translate(XXpx)*/
